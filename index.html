@@ -1,0 +1,23 @@
+<!DICTYPE html>
+<html> 
+    <body>
+        <app></app>
+        <divider></divider>
+        <airport></airport>
+
+        <script src="https://code.angularjs.org/tools/system.js"></script>
+        <script src="https://code.angularjs.org/tools/typescript.js"></script>
+        <script src="https://code.angularjs.org/2.0.0-beta.17/angular2-polyfills.min.js"></script>
+        <script src="https://code.angularjs.org/2.0.0-beta.17/Rx.min.js"></script>
+        <script src="https://code.angularjs.org/2.0.0-beta.17/angular2.min.js"></script>
+        
+        <script>
+            System.config({
+                transpiler: 'typescript',
+                typescriptOptions: { emitDecoratorMetadata: true }
+            });
+
+            System.import('./airport.js')
+        </script>
+    </body>     
+</html>
